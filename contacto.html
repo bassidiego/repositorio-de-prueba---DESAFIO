@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BAZ Films</title>
+	<meta charset="utf-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<header><!--Header-->
+		<a href="index.html"><img src="img/logo_baz.png"/></a>
+		<ul>
+			<li>
+				<a class="menu menufuente" href="index.html">INICIO</a>
+			</li>
+			<li>
+				<a class="menu menufuente" href="galeria.html">GALERÍA</a>
+			</li>
+			<li>
+				<a class="menu menufuente" href="nosotros.html">NOSOTROS</a>
+			</li>
+			<li>
+				<a class="menu menufuente" href="servicios.html">SERVICIOS</a>
+			</li>
+			<li>
+				<a class="menu menufuente" href="contacto.html">CONTACTO</a>
+			</li>
+		</ul>
+	</header>
+	<div>
+		<form action="recibe.html" method="POST" enctype="multipart/form-data">
+			<p>Por favor, complete el siguiente formulario.</p>
+			<input type="mail" name="E-Mail" placeholder="Ingrese su mail"><br>
+			<p>Usted es:</p>
+			<label for="op1">EMPRESA</label>
+			<input type="radio" name="EMPRESA" id="op1" value="1">
+			<label for="op2">PERSONA</label>
+			<input type="radio" name="PERSONA" id="op2" value="2">
+			<br>
+			<p>Seleccione el motivo de su contacto:</p>
+			<select>
+				<option value="a">Quiero contactar su servicio</option>
+				<option value="b">Quiero trabajar con ustedes</option>
+				<option value="c">Tuve un problema</option>
+			</select>
+			<br>
+			<br>
+			<textarea name="mensaje" id="msj" placeholder="Cuéntenos sobre los motivos :)"></textarea><br>
+			<br>
+			<input type="text" name="nombre" placeholder="Ingrese su nombre"><br>
+			<br>
+			<br>
+			<input type="reset" name="BORRAR">
+			<input type="submit" name="ENVIAR">
+
+		</form>
+	</div>
+</body>
+</html>
